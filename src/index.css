@@ -24,7 +24,7 @@ code {
   margin-bottom: 1rem;
 }
 
-.todo.complited span {
+.todo.completed span {
   text-decoration: line-through;
 }
 
@@ -38,6 +38,6 @@ code {
   background: #f3f3f3;
 }
 
-.todos i {
+.todo i {
   z-index: 2;
 }

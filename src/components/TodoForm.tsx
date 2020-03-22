@@ -5,12 +5,8 @@ interface TodoFormProps {
 }
 
 export const TodoForm: React.FC<TodoFormProps> = (props) => {
-  // const [title, setTitle] = useState<string>('')
-  const ref = useRef<HTMLInputElement>(null)
 
-  // const changeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   setTitle(event.target.value)
-  // }
+  const ref = useRef<HTMLInputElement>(null)
 
   const keyPressHandler = (event: React.KeyboardEvent) => {
     if (event.key === 'Enter') {
@@ -22,12 +18,10 @@ export const TodoForm: React.FC<TodoFormProps> = (props) => {
   return (
     <div className="input-field mt2">
       <input
-        // value={title}
         ref={ref}
         type="text"
         id="title"
         placeholder="Enter your Todo.."
-        // onChange={changeHandler}
         onKeyPress={keyPressHandler}
       />
       <label htmlFor="title" className="active">
